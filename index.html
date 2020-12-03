@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>API Test</title>
-    <link href="code/styles.css" rel="stylesheet" />
 
 <style>
 body {
@@ -56,6 +55,24 @@ body {
 }
 </style>
 
+
+
+
+</head>
+
+<body>
+  <div class="container">
+  <div class="quote-text">
+    <h1 id="quote">This is text</h1>
+	<p id="author"> - by Michael </p>
+	</div>
+	
+    <button id="btn">
+       Click Here
+    </button>
+  
+</div>
+
 <script>
 //variables
 
@@ -63,8 +80,8 @@ const btn = document.getElementById('btn');
 const quote = document.getElementById('quote');
 const author = document.getElementById('author');
 
-// let url ="https://codingaddictla.github.io/random-quotes/quotes.json";
-let url ="https://api.paperquotes.com/apiv1/quotes/?tags=love,life&curated=1";
+  let url ="https://codingaddictla.github.io/random-quotes/quotes.json";
+// let url ="https://api.paperquotes.com/apiv1/quotes/?tags=love,life&curated=1";
 //let url = "https://api.paperquotes.com/apiv1/quotes/?tags=love,life&curated=1 -H 'Authorization:57173bd7dbb33566d4685dd0c307624d2aa84355";
 //curl -X GET -H "Authorization: Token {57173bd7dbb33566d4685dd0c307624d2aa84355}" "https://api.paperquotes.com/apiv1/quotes/?tags=love,life&curated=1"
 
@@ -92,25 +109,7 @@ function getData() {
 }
 </script>
 
-
-
-</head>
-
-<body>
-  <div class="container">
-  <div class="quote-text">
-    <h1 id="quote">This is text</h1>
-	<p id="author"> - by Michael </p>
-	</div>
-	
-    <button id="btn">
-       Click Here
-    </button>
-  
-</div>
-
-
-    <script src="code/app.js"></script>
+    
 	
 </body>
 </html>
