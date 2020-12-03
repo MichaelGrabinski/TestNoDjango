@@ -64,7 +64,7 @@ body {
   <div class="container">
   <div class="quote-text">
     <h1 id="text">This is text</h1>
-	<p id="from">  by Michael </p>
+	<p id="from"> - by Michael </p>
 	</div>
 	
     <button id="btn">
@@ -96,12 +96,12 @@ function getData() {
 	
 	.then(function (data) {
 		return data.json();
-	}).then(function (text) {
+	}).then(function (quotes) {
 		
-		let number = Math.floor(Math.random() * text.length);
+		let number = Math.floor(Math.random() * quotes.length);
 		
-		text.innerHTML = '<span>"</span>' + text[number].text + '<span>"</span>';
-		from.innerHTML = '<span>---</span>' + text[number].from;
+		text.innerHTML = '<span>"</span>' + quotes[number].text + '<span>"</span>';
+		from.innerHTML = '<span>---</span>' + quotes[number].from;
 		
 	})
 	.catch(function (error) {
